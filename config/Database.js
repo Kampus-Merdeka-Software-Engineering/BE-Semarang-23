@@ -1,8 +1,8 @@
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize("formshipp", "root", "", {
-  host: "127.0.0.1",
-  // port: "3000",
+const db = new Sequelize("railway", "root", "3JoHrALpX2jxV6mvyzMP", {
+  host: "containers-us-west-201.railway.app",
+  port: "6187",
   dialect: "mysql",
 });
 

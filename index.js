@@ -19,7 +19,8 @@ app.get("/", (req, res) => {
 app.use(UserRoute);
 
 
-app.listen(PORT, () => {
-  console.log(`app is listening on port ${PORT}`);
-})
+// app.listen(PORT, () => {
+//   console.log(`app is listening on port ${PORT}`);
+// })
 
+app.listen(PORT, "0.0.0.0", function () {});
