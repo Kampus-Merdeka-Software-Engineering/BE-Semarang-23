@@ -2,7 +2,7 @@ import { Sequelize, DataTypes } from "sequelize";
 
 import db from "../config/Database.js";
 
-const Shipp = db.define('shipp', {
+const Shipp = db.define("shipp", {
   userID: {
     type: Sequelize.STRING, 
     primaryKey: true
@@ -28,3 +28,7 @@ const Shipp = db.define('shipp', {
 }); 
 
 export default Shipp;
+
+(async () => {
+  await db.sync();
+})();
