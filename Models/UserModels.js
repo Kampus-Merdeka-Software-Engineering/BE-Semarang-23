@@ -4,7 +4,8 @@ import db from "../config/Database.js";
 
 const Shipp = db.define("shipp", {
   userID: {
-    type: Sequelize.STRING, 
+    type: Sequelize.INTEGER,
+    autoIncrement: true, 
     primaryKey: true
   },
   ReceiversName: {
